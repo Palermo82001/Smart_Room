@@ -4,12 +4,12 @@ require 'xmlsimple'
 # Get a WOEID (Where On Earth ID)
 # for your location from here:
 # http://woeid.rosselliot.co.nz/
-woe_id = 3369
+woe_id = 	12761487
  
 # Temerature format:
 # 'c' for Celcius
 # 'f' for Fahrenheit
-format = 'c'
+format = 'f'
  
 SCHEDULER.every '1s', :first_in => 0 do |job|
   http = Net::HTTP.new('weather.yahooapis.com')
